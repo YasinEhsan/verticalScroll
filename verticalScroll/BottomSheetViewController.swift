@@ -34,8 +34,8 @@ class BottomSheetViewController: UIViewController, UIGestureRecognizerDelegate {
             if animator == nil {
                 animator = UIViewPropertyAnimator(duration: 1, curve: .linear, animations: {
                     let scaleTransform = CGAffineTransform(scaleX: 1, y: 5).concatenating(CGAffineTransform(translationX: 0, y: 240))
-                    self.navBarView.transform = scaleTransform
-    //                self.navBarView.alpha = 0
+                                    
+                    //                self.navBarView.alpha = 0                    self.navBarView.transform = scaleTransform
                 })
                 animator?.isReversed = true
                 animator?.startAnimation()
