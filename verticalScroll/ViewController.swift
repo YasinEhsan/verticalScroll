@@ -26,7 +26,7 @@ class ViewController: UIViewController {
            guard let propAnimator = animator else {
                animator = UIViewPropertyAnimator(duration: 3, curve: .linear, animations: {
                    self.blackView.alpha = 1
-                   self.someView.transform = CGAffineTransform(scaleX: 0.8, y: 0.8).concatenating(CGAffineTransform(translationX: 0, y: -20))
+//                   self.someView.transform = CGAffineTransform(scaleX: 0.8, y: 0.8).concatenating(CGAffineTransform(translationX: 0, y: -20))
                })
                animator?.startAnimation()
                animator?.pauseAnimation()
