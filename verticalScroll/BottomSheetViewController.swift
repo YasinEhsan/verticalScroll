@@ -10,6 +10,7 @@ import UIKit
 
 class BottomSheetViewController: UIViewController, UIGestureRecognizerDelegate {
     
+    @IBOutlet weak var collectionViewOne: UICollectionView!
     @IBOutlet weak var navBarView: UIView!
     
         let closeThresholdHeight: CGFloat = 100
@@ -19,8 +20,15 @@ class BottomSheetViewController: UIViewController, UIGestureRecognizerDelegate {
         var animator: UIViewPropertyAnimator?
 
         private var lockPan = false
+    
+        var dataSource1: [String] = ["yas", "tas", "yas", "tas", "yas", "tas", "yas", "tas"]
 
         override func viewDidLoad() {
+            
+            collectionViewOne.dataSource = self
+            
+            
+            
             gotPanned(0)
             super.viewDidLoad()
 
@@ -94,4 +102,21 @@ class BottomSheetViewController: UIViewController, UIGestureRecognizerDelegate {
             let name = NSNotification.Name(rawValue: "BottomViewMoved")
             NotificationCenter.default.post(name: name, object: nil, userInfo: ["percentage": percentage])
         }
+}
+
+extension BottomSheetViewController: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 1;
+    }
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return dataSource1.count
+    }
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellOne", for: indexPath) as! OneCollectionViewCell
+        cell.setLabel(dataSource1[indexPath.row])
+        return cell
+        
+    }
 }

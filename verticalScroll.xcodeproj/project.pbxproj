@@ -14,6 +14,7 @@
 		7CB5C5C823DC19FF00C498A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CB5C5C723DC19FF00C498A6 /* Assets.xcassets */; };
 		7CB5C5CB23DC19FF00C498A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CB5C5C923DC19FF00C498A6 /* LaunchScreen.storyboard */; };
 		7CB5C5D323DC1A3C00C498A6 /* BottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB5C5D223DC1A3C00C498A6 /* BottomSheetViewController.swift */; };
+		7CD155E223DC82D1002775A9 /* OneCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD155E123DC82D1002775A9 /* OneCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		7CB5C5CA23DC19FF00C498A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7CB5C5CC23DC19FF00C498A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7CB5C5D223DC1A3C00C498A6 /* BottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetViewController.swift; sourceTree = "<group>"; };
+		7CD155E123DC82D1002775A9 /* OneCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				7CB5C5C023DC19F900C498A6 /* SceneDelegate.swift */,
 				7CB5C5C223DC19F900C498A6 /* ViewController.swift */,
 				7CB5C5D223DC1A3C00C498A6 /* BottomSheetViewController.swift */,
+				7CD155E123DC82D1002775A9 /* OneCollectionViewCell.swift */,
 				7CB5C5C423DC19F900C498A6 /* Main.storyboard */,
 				7CB5C5C723DC19FF00C498A6 /* Assets.xcassets */,
 				7CB5C5C923DC19FF00C498A6 /* LaunchScreen.storyboard */,
@@ -145,6 +148,7 @@
 				7CB5C5BF23DC19F900C498A6 /* AppDelegate.swift in Sources */,
 				7CB5C5C123DC19F900C498A6 /* SceneDelegate.swift in Sources */,
 				7CB5C5D323DC1A3C00C498A6 /* BottomSheetViewController.swift in Sources */,
+				7CD155E223DC82D1002775A9 /* OneCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
